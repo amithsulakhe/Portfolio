@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    
+}
+nav{
+    color: #1e323e;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    box-shadow: 0 0 5px 2px;
+    box-sizing: border-box;
+    align-items: center;
+    /* height: 70px; */
+}
+
+nav .sub-nav1{
+    width: 20%;
+
+}
+.sub{
+    display: none;
+}
+nav .sub-nav2{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 17px;
+    font-family: cursive;
+    height: 25px;
+}
+nav .sub-nav2 .sections{
+    color: #1e323e;
+    text-decoration: none;
+    border-bottom: 2px solid hidden;
+    text-transform: capitalize;
+}
+
+nav .sub-nav2 .sections:hover{
+    color: #3347ff;
+    border-bottom: 2px solid #3347ff;
+}
+.res-sub-nav2{
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+main .main-containt{
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+.main-name-sub{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.main-name-sub h2{
+    font-size: 30px;
+}
+.main-name-sub h2 span{
+    color: #971010;
+}
+.main-name-subdivision{
+    font-size: 28px;
+    color: #002057;
+
+}
+.btn{
+    width: 140px;
+    box-shadow: 0 0 5px 0px #2506ad;
+    border-radius: 25px;
+    border: none;
+    background: #2506ad;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    font-size: 17px;
+}
+.main-name-sub-2{
+    display: flex;
+    justify-content: space-between;
+    width: 38%;
+
+}
+.links{
+    width: 45px;
+    height: 45px;
+    background: #09011b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+}
+.links i{
+    color: #00d9fd;
+    font-size: 25px;
+}
+.links:hover i{
+    color: #fff;
+}
+.in:hover{
+    background-color:#0a66c2 ;
+}
+.twitter:hover{
+    background-color: #00a7e6;
+}
+.instagram:hover{
+    background-color: #c58af9;
+}
+.telegram:hover{
+    background-color: #3390ec;
+}
+.main-name{
+    width: 70%;
+}
+.avatar-dp{
+    width: 30%;
+}
+.avatar-dp img{
+    width: 85%;
+}
+
+@media screen and (max-width:830px) {
+    nav .sub-nav2{
+        display: none;
+    }
+    .res-sub-nav2{
+        
+        display: block;
+    }
+    nav{
+
+        justify-content: space-between;
+    }
+    .sub .sections{
+        color: #fff;
+        text-decoration: none;
+    }
+    .sub-nav3{ 
+        width: 60%;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 17px;
+        font-family: cursive;
+        height: 25px;
+        height: 89vh;
+        float: right;
+        top: 10%;
+        background: #0e0f31;
+        flex-direction: column;
+        align-items: center;
+     } 
+      .sub-nav3 .sections{
+        color: #fff;
+        width: 60%;
+        text-align: center;
+        padding: 10px 0;
+     }
+      .sub-nav3 .sections:hover{
+        color: #fff;
+        border-radius: 5px;
+        border-bottom: 5px solid #3347ff;
+    }
+    main .main-containt {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-name-sub-2{
+    
+        width: 65%;
+    
+    }
+    .avatar-dp img {
+        width: 100%;
+    }
+    .main-name-subdivision {
+        font-size: 22px;
+        color: #002057;
+    }
+    .main-name-sub h2 {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:650px) {
+    .main-name-sub {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .main-name-subdivision {
+        font-size: 12px;
+        color: #002057;
+    }
+    .main-name-sub h2 {
+        font-size: 17px;
+    }
+    .btn {
+        width: 90px;
+        box-shadow: 0 0 5px 0px #2506ad;
+        border-radius: 25px;
+        border: none;
+        background: #2506ad;
+        color: #fff;
+        padding: 8px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+        font-size: 10px;
+    }
+    .main-name-sub-2 {
+        width: 100%;
+    }
+    .links {
+        width: 40px;
+        height: 40px;
+    }
+    .avatar-dp {
+        width: 50%;
+    }
+}
