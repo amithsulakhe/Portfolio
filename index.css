@@ -2,17 +2,30 @@
     margin: 0;
     padding: 0;
     /* box-sizing: border-box; */
-    
+    font-family: "Poppins", sans-serif;
+
 }
-nav{
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 5px 2px;
+background-color: #fff;
+}
+.nav_container{
     color: #1e323e;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 20px;
-    box-shadow: 0 0 5px 2px;
     box-sizing: border-box;
     align-items: center;
-    /* height: 70px; */
+    background: #fff;
+    height: 70px;
+}
+.container{
+    max-width: 1260px;
+    margin-inline: auto;
 }
 
 nav .sub-nav1{
@@ -46,7 +59,11 @@ nav .sub-nav2 .sections:hover{
     cursor: pointer;
     display: none;
 }
+main {
+    margin-top: 4%;
+}
 main .main-containt{
+    background-color: lightblue;
     display: flex;
     justify-content: space-between;
     padding: 5%;
@@ -55,38 +72,59 @@ main .main-containt{
     height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .main-name-sub h2{
-    font-size: 30px;
+    font-size: 28px;
 }
 .main-name-sub h2 span{
     color: #971010;
 }
 .main-name-subdivision{
-    font-size: 28px;
+    font-size: 25px;
     color: #002057;
 
 }
+
 .btn{
-    width: 140px;
-    box-shadow: 0 0 5px 0px #2506ad;
+    width: 165px;
+    box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
     border-radius: 25px;
     border: none;
     background: #2506ad;
     color: #fff;
-    padding: 15px;
+    padding: 12px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     cursor: pointer;
     font-size: 17px;
+    /* transition: 5s; */
+
+}
+
+.btn:hover{
+    background: #1a047e;
+
+}
+.btn i{
+    transition: 0.5s ease-in-out;
+
+}
+.btn:hover  i{
+    transform: translateX(10px);
+
+
 }
 .main-name-sub-2{
     display: flex;
     justify-content: space-between;
-    width: 38%;
+    width: 30%;
+    margin-top: 2%;
 
+}
+main{
+    background-color: lightblue;
 }
 .links{
     width: 45px;
@@ -123,12 +161,76 @@ main .main-containt{
 }
 .avatar-dp{
     width: 30%;
+    margin-top: 5%;
 }
 .avatar-dp img{
     width: 85%;
+    width: 85%;
+    border-radius: 50%;
 }
 
-@media screen and (max-width:830px) {
+
+/* //about section */
+.parent-about-section{
+    margin-top: 2%;
+
+}
+.about_section_main{
+    width: 65%;
+}
+.about_section{
+ 
+    padding: 5% 6% 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
+.about_section .picture{
+    width: 300px;
+    cursor: pointer;
+    background-color: snow;
+}
+.about_section .picture img{
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+    height: 350px;
+mix-blend-mode: luminosity;
+}
+.about_section .picture img:hover{
+    mix-blend-mode: normal;
+}
+.about_info{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    transition: 0.5s;
+}
+.res_btn{
+    width: 130px;
+    height: 45px;
+    box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
+    background: #2506ad;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.res_btn i{
+    transition: 0.5s ease-in-out;
+}
+.res_btn:hover{
+    background: #1a047e;
+}
+.res_btn:hover i{
+    transform: translateX(10px);
+}
+@media screen and (max-width:1150px) {
     nav .sub-nav2{
         display: none;
     }
@@ -146,14 +248,15 @@ main .main-containt{
     }
     .sub-nav3{ 
         width: 60%;
+        position: fixed;
         display: flex;
         justify-content: space-evenly;
         font-size: 17px;
         font-family: cursive;
         height: 25px;
         height: 89vh;
-        float: right;
         top: 10%;
+        right: 0;
         background: #0e0f31;
         flex-direction: column;
         align-items: center;
@@ -190,6 +293,17 @@ main .main-containt{
     .main-name-sub h2 {
         font-size: 30px;
     }
+    .about_info {
+        width: 100%;
+    }
+ 
+    .about_section{
+    flex-direction: column;
+    align-items: center;
+}    
+.picture{
+    margin: 5% 0;
+}
 }
 @media screen and (max-width:650px) {
     .main-name-sub {
@@ -226,7 +340,10 @@ main .main-containt{
         width: 40px;
         height: 40px;
     }
-    .avatar-dp {
-        width: 50%;
+    .about_section .picture {
+        width: 300px;
+    }    
+    .about_section_main {
+        width: 100%;
     }
 }
