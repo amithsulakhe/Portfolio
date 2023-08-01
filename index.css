@@ -3,7 +3,7 @@
     padding: 0;
     /* box-sizing: border-box; */
     font-family: "Poppins", sans-serif;
-
+    scroll-behavior: smooth;
 }
 header{
     position: fixed;
@@ -12,6 +12,7 @@ header{
     left: 0;
     box-shadow: 0 0 5px 2px;
 background-color: #fff;
+z-index: 1;
 }
 .nav_container{
     color: #1e323e;
@@ -171,12 +172,9 @@ main{
 
 
 /* //about section */
-.parent-about-section{
-    margin-top: 2%;
-
-}
 .about_section_main{
     width: 65%;
+    padding-block: 100px;
 }
 .about_section{
  
@@ -229,6 +227,44 @@ mix-blend-mode: luminosity;
 }
 .res_btn:hover i{
     transform: translateX(10px);
+}
+.skill_container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    flex-wrap: wrap;
+    gap: 1.8rem;
+    background: rgba(0, 0, 22, 0.4);
+    color: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+.child_skill_section h2{
+    text-align: center;
+    padding: 2% 0;
+    font-size: 35px;
+    color: #fff;
+
+}
+.child_skill_section h2 span{
+    color: rgb(255, 230, 0);
+}
+.skill_container .app{
+    color: #fff;
+    text-align: center;
+    /* border-radius: 25px; */
+    cursor: pointer;
+    padding: 25px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 22, 0.9);
+}
+.skill_container .app:hover{
+    box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+/*  skill section */
+.Parent_skill_section{
+    background: linear-gradient(#5504ab,#4c01d6);
 }
 @media screen and (max-width:1150px) {
     nav .sub-nav2{
@@ -303,6 +339,16 @@ mix-blend-mode: luminosity;
 }    
 .picture{
     margin: 5% 0;
+}
+.skill_container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(6,1fr);
+    background: rgba(0, 0, 22, 0.4);
+    color: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    grid-gap: 1rem;
 }
 }
 @media screen and (max-width:650px) {
