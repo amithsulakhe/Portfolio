@@ -25,41 +25,43 @@ function FunProfileToggle(link, isMouseEnter) {
 
 // Skills 
 let arr=[{
-    skill:["asset 9.png","ReactJS"]
+    skill:["asset 9.png","ReactJS","https://react.dev/"]
 }
 ,{
-    skill:["asset 12.png","Redux"]
+    skill:["asset 12.png","Redux","https://redux-toolkit.js.org/"]
 },{
-    skill:["asset 17.png","TailwindCSS"]
+    skill:["asset 17.png","TailwindCSS","https://tailwindcss.com/"]
 },
 
 {
-    skill:["asset 18.png","Bootstrap"]
+    skill:["asset 18.png","Bootstrap","https://getbootstrap.com/"]
 },{
-    skill:["asset 20.png","HTML5"]
+    skill:["asset 20.png","HTML5","https://developer.mozilla.org/en-US/docs/Web/HTML"]
 },{
-    skill:["asset 21.png","CSS5"]
+    skill:["asset 21.png","CSS5","https://developer.mozilla.org/en-US/docs/Web/CSS"]
 },
 
 {
-    skill:["asset 22.png","Javascript"]
+    skill:["asset 22.png","Javascript","https://developer.mozilla.org/en-US/docs/Web/JavaScript"]
 },
 
 {
-    skill:["asset 26.png","Python"]
+    skill:["asset 26.png","Python","https://www.python.org/"]
 },{
-    skill:["asset 29.png","MySQL"]
+    skill:["asset 29.png","MySQL","https://www.mysql.com/"]
 },
 
 {
-    skill:["asset 33.png","Netlify"]
+    skill:["asset 33.png","Netlify","https://www.netlify.com/?attr=homepage-modal"]
 },
 {
-    skill:["asset 37.png","Github"]
+    skill:["asset 37.png","Github","https://github.com/"]
 }
 ]
 arr.map((e)=>{
-    let app=document.createElement("div")
+    let app=document.createElement("a")
+    app.setAttribute("href",e.skill[2])
+    app.setAttribute("target","_blank")
     app.classList.add("app")
     console.log("./images/"+typeof(e.skill[0]));
     app.innerHTML=`

@@ -258,13 +258,15 @@ mix-blend-mode: luminosity;
 }
 .skill_container .app{
     color: #fff;
-    text-align: center;
+    display: grid;
+    place-items: center;
     /* border-radius: 25px; */
     cursor: pointer;
     padding: 25px;
     border-radius: 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     background: rgba(0, 0, 22, 0.9);
+    text-decoration: none;
 }
 .skill_container .app:hover{
     box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
