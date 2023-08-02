@@ -209,7 +209,7 @@ main {
 /* //about section */
 .about_section_main {
     width: 65%;
-    padding-block: 100px;
+
 }
 
 .about_section {
@@ -221,7 +221,9 @@ main {
 
 
 }
-
+#about{
+    padding-top: 4%;
+}
 .about_section .picture {
     width: 300px;
     cursor: pointer;
@@ -277,7 +279,9 @@ main {
 .res_btn:hover i {
     transform: translateX(10px);
 }
-
+#skills{
+    padding-top: 4%;
+}
 .skill_container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -327,7 +331,6 @@ main {
 }
 
 .child_skill_section {
-    padding-top: 4%;
     min-height: 80vh;
 
 
@@ -350,12 +353,10 @@ main {
 }
 
 .myedu {
-    margin-top: 40px;
     font-size: 30px;
     color: rgb(32, 32, 32);
     font-weight: 800;
     text-align: center;
-    padding-top: 8%;
 }
 
 .edu {
@@ -368,13 +369,19 @@ main {
     background: rgb(252, 252, 252);
     border-radius: 5px;
 }
-
+#education{
+    padding-top: 4%;
+}
 .edu img {
     width: 280px;
 }
 
 .infoedu {
     margin-left: 2%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .infoedu h2 {
