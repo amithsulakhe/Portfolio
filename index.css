@@ -438,6 +438,12 @@ mix-blend-mode: luminosity;
 .edu img{
     width: 100%;
 }
+.skill_container .app:hover {
+    scale: 1;
+}
+.about_section .picture img:hover {
+    scale: 1;
+}
 }
 @media screen and (max-width:650px) {
     .main-name-sub {
