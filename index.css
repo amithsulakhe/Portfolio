@@ -31,7 +31,14 @@ z-index: 1;
 
 nav .sub-nav1{
     width: 20%;
+transition: 0.5s;
+cursor: pointer;
 
+}
+nav .sub-nav1:hover{
+    color: rgb(196, 87, 87);
+    font-weight: 600;
+    font-size: 18px;
 }
 .sub{
     display: none;
@@ -191,6 +198,7 @@ main{
     background-color: snow;
 }
 .about_section .picture img{
+    
     width: 100%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
     border-radius: 25px;
@@ -265,7 +273,69 @@ mix-blend-mode: luminosity;
 /*  skill section */
 .Parent_skill_section{
     background: linear-gradient(#5504ab,#4c01d6);
+    transition: 0.35s;
 }
+.child_skill_section{
+    padding-top: 4%;
+    min-height: 80vh;
+
+
+}
+
+/* Myeducation section*/
+.Parent_myeducation_section{
+
+    background: #e5ecfb;
+    min-height: 80vh;
+}
+.education_studies{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 25px;
+    place-content: center;
+    margin-bottom: 50px;
+
+}
+.myedu{
+    margin-top: 40px;
+    font-size: 30px;
+    color: rgb(32, 32, 32);
+    font-weight: 800;
+    text-align: center;
+    padding-top: 8%;
+}
+.edu{
+    display: flex;
+    align-items: center;
+    box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+    overflow: hidden;
+    transition: 0.3s;
+    background: rgb(252, 252, 252);
+    border-radius: 5px;
+}
+
+.edu img{
+    width: 280px;
+}
+
+.infoedu{
+    margin-left: 2%;
+}
+.infoedu h2{
+    font-size: 25px;
+    color: #012970;
+    /* padding: 0.5rem 0; */
+}
+.infoedu h3{
+    color: rgb(34, 109, 0);
+    font-family: "Nunito", sans-serif;
+}
+
+.child_myeducation_section h2 span{
+    color: rgb(115, 3, 167);
+}
+
 @media screen and (max-width:1150px) {
     nav .sub-nav2{
         display: none;
@@ -349,6 +419,20 @@ mix-blend-mode: luminosity;
     border-radius: 1rem;
     padding: 2rem;
     grid-gap: 1rem;
+}
+.edu{
+    flex-direction: column;
+    width: 80%;
+}
+.infoedu {
+    margin-block: 25px;
+    text-align: center;
+}
+.education_studies {
+    place-items: center;
+}
+.edu img{
+    width: 100%;
 }
 }
 @media screen and (max-width:650px) {
