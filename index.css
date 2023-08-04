@@ -456,13 +456,16 @@ main {
     display: flex;
     transform: 0.5s;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
     background-color: #fff;
 }
 .content{
     text-align: left;
     margin-left: 5%;
   
+}
+.content_tag{
+    font-size: 15px;
 }
 .btns{
     display: flex;
@@ -679,5 +682,11 @@ main {
     .project_cards {
         width: 250px;
         height: 185px;
+    }
+    .child_project_cards{
+        gap: 15px;
+    }
+    .content_tag{
+        font-size: 10px;
     }
 }
