@@ -2,6 +2,11 @@ const ToggleBtn=document.querySelector(".bars")
 const BarDisplay=document.querySelector(".sub")
 const skill_container=document.querySelector(".skill_container")
 console.log(ToggleBtn);
+const images=document.querySelectorAll(".img")
+console.log(images);
+images.forEach((slide,index)=>{
+    slide.style.left=`${index * 100}%`
+})
 // const link=document.querySelector(".fa-brands")
 ToggleBtn.addEventListener("click",funtoggle)
 function funtoggle(){
@@ -70,3 +75,43 @@ arr.map((e)=>{
     `
     skill_container.appendChild(app)
 })
+console.log(images.length);
+const prev=document.querySelector(".prev")
+const next=document.querySelector(".next")
+
+ let count=0
+ function a(count){
+    console.log(count);
+    if(count>0){
+        prev.style.display="block"
+        next.style.display="none"
+     }
+     else{
+        prev.style.display="none"
+        next.style.display="block"
+
+     }
+ }
+a(count)
+ const goPrev=()=>{
+    if(count>0){
+        count--
+        clickHandler()
+        a(count)
+    }
+
+
+ }
+ const goNext=()=>{
+    if(count<images.length-1){
+    count++
+    console.log(count);
+        clickHandler()
+        a(count)
+    }
+ }
+ const clickHandler=()=>{
+    images.forEach((slide,index)=>{
+        slide.style.transform=`translateX(-${count*100}%)`
+    })
+ }
