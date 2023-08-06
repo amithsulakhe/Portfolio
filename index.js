@@ -115,3 +115,11 @@ a(count)
         slide.style.transform=`translateX(-${count*100}%)`
     })
  }
+ const marque=document.querySelector(".marque")
+//  marque.style.color="red"
+ setInterval(() => {
+    const randomColors=["#ffae00","#002057","red","blue","green","white","skyblue"]
+    marque.style.color=randomColors[Math.floor(Math.random()*randomColors.length)]
+ }, 500);
+
+ 

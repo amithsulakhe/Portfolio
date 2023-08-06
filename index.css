@@ -757,6 +757,9 @@ flex-direction: column
     gap: 10%;
     flex-wrap: wrap;
 }
+.marque{
+    font-size: 40px;
+}
 @media screen and (max-width:1250px) {
     nav .sub-nav2 {
         display: none;
@@ -910,6 +913,9 @@ flex-direction: column
     .main_footer{
         padding-inline: 50px;
     }
+    .marque{
+        font-size: 30px;
+    }
     
     
 }
@@ -1004,5 +1010,8 @@ flex-direction: column
     }
     .footer_about,.footer_links,.footer_contact{
         width: 100%;
+    }
+    .marque{
+        font-size: 25px;
     }
 }
