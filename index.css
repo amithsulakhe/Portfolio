@@ -708,7 +708,7 @@ flex-direction: column
 .footer_about{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 25px;
     width: 40%;
 }
 .footer_links{
@@ -760,6 +760,9 @@ flex-direction: column
 .marque{
     font-size: 40px;
 }
+#projects,#certifications,#contact{
+    padding-top: 4%;
+}
 @media screen and (max-width:1250px) {
     nav .sub-nav2 {
         display: none;
@@ -793,12 +796,14 @@ flex-direction: column
         background: #0e0f31;
         flex-direction: column;
         align-items: center;
+        
     }
 
     .sub-nav3 .sections {
         color: #fff;
         width: 60%;
         text-align: center;
+        
         padding: 10px 0;
     }
 
