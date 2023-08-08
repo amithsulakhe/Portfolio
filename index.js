@@ -122,4 +122,15 @@ a(count)
     marque.style.color=randomColors[Math.floor(Math.random()*randomColors.length)]
  }, 500);
 
- 
+ const showDisplay=document.querySelector(".scroll")
+ function handleScroll() {
+    if (window.scrollY > 1450) {
+        showDisplay.classList.add("active_scroll")
+    } else {
+        showDisplay.classList.remove("active_scroll")
+    }
+}
+// Attach the scroll event listener
+window.addEventListener("scroll", handleScroll);
+
+// Assuming you have an HTML element with the ID "showDisplay"
