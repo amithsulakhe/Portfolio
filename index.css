@@ -823,8 +823,13 @@ flex-direction: column
         text-decoration: none;
         transition: 0.5s;
     }
-
-   
+    .nav_container{
+        background: #232020;
+        color: white;
+    }
+   .bars{
+    color: #62b962;
+   }
     .res-sub-nav2 {
 
         display: block;
@@ -835,6 +840,7 @@ flex-direction: column
         justify-content: space-between;
     }
 
+   
     .sub-nav2 .sections {
         color: #fff !important;
         width: 60%;
