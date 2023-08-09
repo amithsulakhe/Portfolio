@@ -45,9 +45,9 @@ nav .sub-nav1:hover {
     font-size: 18px;
 }
 
-.sub {
+/* .sub {
     display: none;
-}
+} */
 
 nav .sub-nav2 {
     width: 60%;
@@ -784,12 +784,47 @@ flex-direction: column
     position: fixed;
     bottom: 8%;
     right: 5%;
+    box-shadow: 0 0 7px;
+    animation: amith 2s linear 1s infinite alternate; 
 }
+@keyframes amith {
+    0%{
+        bottom: 8%;
+    }
+    25%{
+        bottom: 9%;
+    }
+    50%{
+        bottom: 10%;
+    }
+    75%{
+        bottom: 11%;
+    }
+    100%{
+        bottom: 12%;
+    }
+}
+
 @media screen and (max-width:1250px) {
     nav .sub-nav2 {
-        display: none;
+        width: 60%;
+        position: fixed;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 17px;
+        font-family: cursive;
+        height: 25px;
+        height: 89vh;
+        right: -100%;
+        background: #0e0f31;
+        flex-direction: column;
+        align-items: center;
+        top: 70px;
+        text-decoration: none;
+        transition: 0.5s;
     }
 
+   
     .res-sub-nav2 {
 
         display: block;
@@ -800,41 +835,24 @@ flex-direction: column
         justify-content: space-between;
     }
 
-    .sub .sections {
-        color: #fff;
-        text-decoration: none;
-    }
-
-    .sub-nav3 {
-        width: 60%;
-        position: fixed;
-        display: flex;
-        justify-content: space-evenly;
-        font-size: 17px;
-        font-family: cursive;
-        height: 25px;
-        height: 89vh;
-        right: 0;
-        background: #0e0f31;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-
-    .sub-nav3 .sections {
-        color: #fff;
+    .sub-nav2 .sections {
+        color: #fff !important;
         width: 60%;
         text-align: center;
         
         padding: 10px 0;
     }
 
-    .sub-nav3 .sections:hover {
+    .sub-nav2 .sections:hover {
         color: #fff;
         border-radius: 5px;
         border-bottom: 5px solid #3347ff;
     }
 
+    nav .sub-nav3{
+        position: fixed;
+        right: 0;
+    }
     main .main-containt {
         display: flex;
         justify-content: center;

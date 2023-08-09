@@ -1,5 +1,5 @@
 const ToggleBtn=document.querySelector(".bars")
-const BarDisplay=document.querySelector(".sub")
+const BarDisplay=document.querySelector(".sub-nav2")
 const skill_container=document.querySelector(".skill_container")
 console.log(ToggleBtn);
 const images=document.querySelectorAll(".img")
@@ -124,6 +124,9 @@ a(count)
 
  const showDisplay=document.querySelector(".scroll")
  function handleScroll() {
+    BarDisplay.classList.remove("sub-nav3")
+    ToggleBtn.classList.remove("fa-xmark")
+
     if (window.scrollY > 1450) {
         showDisplay.classList.add("active_scroll")
     } else {
