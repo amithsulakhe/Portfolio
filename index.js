@@ -82,15 +82,15 @@ const next=document.querySelector(".next")
  let count=0
  function a(count){
     console.log(count);
-    if(count>0){
-        prev.style.display="block"
-        next.style.display="none"
-     }
-     else{
-        prev.style.display="none"
-        next.style.display="block"
+    // if(count>0){
+    //     prev.style.display="block"
+    //     next.style.display="none"
+    //  }
+    //  else{
+    //     prev.style.display="none"
+    //     next.style.display="block"
 
-     }
+    //  }
  }
 a(count)
  const goPrev=()=>{
